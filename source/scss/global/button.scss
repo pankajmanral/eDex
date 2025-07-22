@@ -1,0 +1,32 @@
+.btn {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+    font-family: $font-semibold;
+    align-self: baseline;
+    font-size: 1rem;
+    line-height: 24px; 
+    padding: 12px 24px;
+    color: $white;
+    border: none;
+    outline: none;
+    @include rounded(100px);
+    position: relative;
+    cursor: pointer;
+    @include respond-to(large){
+        font-size: 0.875rem;
+    }
+    font-weight: 400;
+}
+.btn-primary {
+    color: $white;
+    background-color:$primary;
+    background: linear-gradient(180deg,rgba(255, 194, 122, 1) 0%, rgba(255, 163, 55, 1) 100%);
+    &:hover {
+        // background-color: $btn-primary-hover;
+        // border: 1px solid $btn-primary-hover;
+        // background: transparent;
+        color: $white;
+    }
+}
