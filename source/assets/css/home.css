@@ -105,6 +105,10 @@
 
 @media only screen and (max-width: 991px) {
 
+.banner .banner-wrapper .banner-left-text .banner-title {
+	margin-bottom: 22px;
+}
+
 .banner .banner-wrapper .banner-left-text .banner-heading {
 	font-size: 30px;
 	line-height: 35px;
@@ -113,6 +117,10 @@
 .banner .banner-wrapper .banner-left-text .banner-subheading {
 	font-size: 16px;
 	line-height: 20px;
+}
+
+.banner .banner-wrapper .banner-left-text .banner-subheading {
+	margin-bottom: 22px;
 }
 
 .banner .banner-wrapper .banner-left-text .form-control input {
@@ -136,6 +144,18 @@
 .banner .banner-wrapper {
 	-ms-flex-direction: column-reverse;
 	    flex-direction: column-reverse;
+}
+
+}
+
+@media only screen and (max-width: 575px) {
+
+.banner {
+	padding: 40px 0px;
+}
+
+.banner .banner-wrapper .banner-right-image {
+	margin-bottom: 40px;
 }
 
 }
