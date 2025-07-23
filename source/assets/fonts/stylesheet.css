@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Public Sans';
+    src: url('PublicSans-Medium.eot');
+    src: url('PublicSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('PublicSans-Medium.woff2') format('woff2'),
+        url('PublicSans-Medium.woff') format('woff'),
+        url('PublicSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: url('PublicSans-Regular.eot');
+    src: url('PublicSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PublicSans-Regular.woff2') format('woff2'),
+        url('PublicSans-Regular.woff') format('woff'),
+        url('PublicSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Public Sans';
+    src: url('PublicSans-SemiBold.eot');
+    src: url('PublicSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('PublicSans-SemiBold.woff2') format('woff2'),
+        url('PublicSans-SemiBold.woff') format('woff'),
+        url('PublicSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

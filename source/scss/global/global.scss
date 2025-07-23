@@ -38,7 +38,7 @@ button {
   padding-right: 0.9375rem;
   max-width: 1440px;
   width: 100%;
-  border: 1px solid rgba(255, 189, 6, 0.226);
+  // border: 1px solid rgba(255, 189, 6, 0.226);
 }
 
 /* Reset list styles */
@@ -301,7 +301,6 @@ a {
 
   .modal-title {
     color: grey;
-    font-family: $font-bold;
     font-size: 1.25rem;
     line-height: 1.625rem;
     letter-spacing: 0.01rem;

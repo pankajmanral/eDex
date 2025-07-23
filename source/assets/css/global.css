@@ -1,35 +1,26 @@
 @font-face {
-	font-family: "inter-regular";
-	src: url("../fonts/Inter24pt-Regular.eot");
-	src: url("../fonts/Inter24pt-Regular.eot?#iefix") format("embedded-opentype"),url("../fonts/Inter24pt-Regular.woff2") format("woff2"),url("../fonts/Inter24pt-Regular.woff") format("woff"),url("../fonts/Inter24pt-Regular.ttf") format("truetype"),url("../fonts/Inter24pt-Regular.svg#Inter24pt-Regular") format("svg");
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: "inter-medium";
-	src: url("../fonts/Inter24pt-Medium.eot");
-	src: url("../fonts/Inter24pt-Medium.eot?#iefix") format("embedded-opentype"),url("../fonts/Inter24pt-Medium.woff2") format("woff2"),url("../fonts/Inter24pt-Medium.woff") format("woff"),url("../fonts/Inter24pt-Medium.ttf") format("truetype"),url("../fonts/Inter24pt-Medium.svg#Inter24pt-Medium") format("svg");
+	font-family: "Sans-Medium";
+	src: url("../../assets/fonts/PublicSans-Medium.eot");
+	src: url("../../assets/fonts/PublicSans-Medium.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/PublicSans-Medium.woff2") format("woff2"),url("../../assets/fonts/PublicSans-Medium.woff") format("woff"),url("../../assets/fonts/PublicSans-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "inter-semibold";
-	src: url("../fonts/Inter24pt-SemiBold.eot");
-	src: url("../fonts/Inter24pt-SemiBold.eot?#iefix") format("embedded-opentype"),url("../fonts/Inter24pt-SemiBold.woff2") format("woff2"),url("../fonts/Inter24pt-SemiBold.woff") format("woff"),url("../fonts/Inter24pt-SemiBold.ttf") format("truetype"),url("../fonts/Inter24pt-SemiBold.svg#Inter24pt-SemiBold") format("svg");
-	font-weight: 600;
+	font-family: "Sans-Regular";
+	src: url("../../assets/fonts/PublicSans-Regular.eot");
+	src: url("../../assets/fonts/PublicSans-Regular.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/PublicSans-Regular.woff2") format("woff2"),url("../../assets/fonts/PublicSans-Regular.woff") format("woff"),url("../../assets/fonts/PublicSans-Regular.ttf") format("truetype");
+	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "inter-bold";
-	src: url("../fonts/Inter24pt-Bold.eot");
-	src: url("../fonts/Inter24pt-Bold.eot?#iefix") format("embedded-opentype"),url("../fonts/Inter24pt-Bold.woff2") format("woff2"),url("../fonts/Inter24pt-Bold.woff") format("woff"),url("../fonts/Inter24pt-Bold.ttf") format("truetype"),url("../fonts/Inter24pt-Bold.svg#Inter24pt-Bold") format("svg");
-	font-weight: 700;
+	font-family: "Sans-SemiBold";
+	src: url("../../assets/fonts/PublicSans-SemiBold.eot");
+	src: url("../../assets/fonts/PublicSans-SemiBold.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/PublicSans-SemiBold.woff2") format("woff2"),url("../../assets/fonts/PublicSans-SemiBold.woff") format("woff"),url("../../assets/fonts/PublicSans-SemiBold.ttf") format("truetype");
+	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
@@ -44,7 +35,7 @@
 
 html,
 body {
-	font-family: "inter-regular";
+	font-family: "Sans-Regular";
 	background: #fff;
 	width: 100%;
 	font-size: 16px;
@@ -73,7 +64,6 @@ button {
 	padding-right: .9375rem;
 	max-width: 1440px;
 	width: 100%;
-	border: 1px solid rgba(255,189,6,.226);
 }
 
 ul,
@@ -140,7 +130,7 @@ a {
 }
 
 .section-title {
-	font-family: "inter-semibold";
+	font-family: "Sans-SemiBold";
 	font-size: 2.25rem;
 	line-height: 54px;
 	margin-bottom: 1.25rem;
@@ -155,7 +145,7 @@ a {
 }
 
 .section-title .blue-txt {
-	font-family: "inter-semibold";
+	font-family: "Sans-SemiBold";
 	color: #13a2fe;
 }
 
@@ -243,7 +233,6 @@ a {
 
 .modal-box .modal-title {
 	color: gray;
-	font-family: "inter-bold";
 	font-size: 1.25rem;
 	line-height: 1.625rem;
 	letter-spacing: .01rem;
@@ -315,7 +304,7 @@ a {
 .table-content .table-wrap table thead th {
 	padding: 20px 16px;
 	color: #fff;
-	font-family: "inter-semibold";
+	font-family: "Sans-SemiBold";
 	font-size: 16px;
 	font-style: normal;
 	line-height: 20px;
@@ -332,7 +321,7 @@ a {
 
 .table-content .table-wrap table td {
 	padding: .75rem 1rem;
-	font-family: "inter-regular";
+	font-family: "Sans-Regular";
 	font-size: 1rem;
 	line-height: 1.48rem;
 }
@@ -350,7 +339,7 @@ a {
 }
 
 .table-heading {
-	font-family: "inter-semibold";
+	font-family: "Sans-SemiBold";
 	font-size: 18px;
 	font-style: normal;
 	line-height: 20px;
@@ -380,7 +369,7 @@ a {
 	-ms-flex-pack: center;
 	    justify-content: center;
 	text-align: center;
-	font-family: "inter-semibold";
+	font-family: "Sans-SemiBold";
 	-ms-flex-item-align: baseline;
 	    align-self: baseline;
 	font-size: 1rem;
@@ -393,7 +382,7 @@ a {
 	border-radius: 100px;
 	position: relative;
 	cursor: pointer;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 .btn-primary {

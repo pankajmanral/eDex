@@ -106,6 +106,7 @@
 .highlights {
 	position: relative;
 	padding: 50px 0;
+	background-color: #f1f2f8;
 }
 
 .highlights .highlights-wrapper {
