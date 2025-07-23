@@ -1,0 +1,49 @@
+.courses{
+    padding: 100px 0;
+
+    .swiper{
+        width: 100%;
+    }
+
+    .swiper-wrapper{
+        display: flex;
+    }
+
+    .courses-card{
+        padding: 16px;
+        background-color: $white;
+        @include rounded(24px);
+        border: 1px solid;
+    
+        .courses-img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 16px;
+
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        .courses-card-title{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+            font-family: $font-medium;
+            margin-bottom: 16px;
+        }
+
+        .rating{
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+
+            .count{
+                margin-left: 11px;
+            }
+        }
+    }
+}

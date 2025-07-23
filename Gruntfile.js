@@ -30,6 +30,7 @@ module.exports = function(grunt) {
                     "source/assets/css/global.css": "source/assets/css/global.css",
                     "source/assets/css/component.css": "source/assets/css/component.css",
                     "source/assets/css/home.css": "source/assets/css/home.css",
+                    "source/assets/css/swiper-bundle.css": "source/assets/css/swiper-bundle.css",
                 },
             },
         },
@@ -43,6 +44,7 @@ module.exports = function(grunt) {
                     "source/assets/css/global.css": "source/assets/css/global.css",
                     "source/assets/css/component.css": "source/assets/css/component.css",
                     "source/assets/css/home.css": "source/assets/css/home.css",
+                    "source/assets/css/swiper-bundle.css": "source/assets/css/swiper-bundle.css",
                 },
             },
         },
@@ -162,6 +164,7 @@ module.exports = function(grunt) {
                     src: ["*.pug"],
                     dest: "source/",
                     ext: ".html",
+                    
                 }, ],
             },
         },
@@ -171,6 +174,7 @@ module.exports = function(grunt) {
             },
             compile: {
                 files: {
+                    "source/assets/css/swiper-bundle.css": "source/scss/vendor/swiper-bundle.min.scss",
                     "source/assets/css/aos.css": "source/scss/vendor/aos.scss",
                     "source/assets/css/global.css": "source/scss/layout.scss",
                     "source/assets/css/component.css": "source/scss/component/master.scss",
