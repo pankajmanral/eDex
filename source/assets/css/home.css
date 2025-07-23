@@ -185,6 +185,63 @@
 	line-height: 1.75rem;
 }
 
+.popular {
+	padding: 100px 0;
+	background-color: #f1f2f8;
+}
+
+.popular .popular-card-wrapper {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	margin: -12px;
+}
+
+.popular .popular-card-wrapper .popular-card {
+	background-color: #fff;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	width: 100%;
+	max-width: 312px;
+	padding: 16px 24px;
+	border-radius: 22px;
+	border: 1px solid;
+	border-color: #fff;
+	margin: 12px;
+	transition: all .3s ease-in-out;
+}
+
+.popular .popular-card-wrapper .popular-card .popular-card-title {
+	width: 100%;
+	max-width: 160px;
+	color: #000;
+	margin-left: 16px;
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 500;
+}
+
+.popular .popular-card-wrapper .popular-card .ri-arrow-right-up-line {
+	font-size: 24px;
+	color: #ffc27a;
+	padding: 10px;
+	border-radius: 100%;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+.popular .popular-card-wrapper .popular-card .ri-arrow-right-up-line:hover {
+	background-color: #ffc27a;
+	color: #fff;
+}
+
 @media only screen and (max-width: 991px) {
 
 .banner .banner-wrapper .banner-left-text .banner-title {
@@ -228,6 +285,10 @@
 	    flex-direction: column-reverse;
 }
 
+.popular {
+	padding: 50px 0;
+}
+
 }
 
 @media only screen and (max-width: 575px) {
@@ -238,6 +299,29 @@
 
 .banner .banner-wrapper .banner-right-image {
 	margin-bottom: 2.5rem;
+}
+
+.highlights {
+	padding: 1.25rem 0;
+}
+
+.popular {
+	padding: 1.25rem 0;
+}
+
+.popular .popular-card-wrapper {
+	margin: 0;
+}
+
+.popular .popular-card-wrapper .popular-card {
+	margin: 12px 0;
+	max-width: 100%;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+.popular .popular-card-wrapper .popular-card .popular-card-title {
+	max-width: 100%;
 }
 
 }

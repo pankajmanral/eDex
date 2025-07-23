@@ -38,7 +38,7 @@ button {
   padding-right: 0.9375rem;
   max-width: 1440px;
   width: 100%;
-  // border: 1px solid rgba(255, 189, 6, 0.226);
+  border: 1px solid rgba(255, 189, 6, 0.226);
 }
 
 /* Reset list styles */
@@ -50,16 +50,41 @@ ol {
   margin: 0;
 }
 
-button {
-  // background: transparent;
-}
-
-/* Reset anchor styles */
-
 a {
   text-decoration: none;
   color: inherit;
   display: inline-block;
+}
+
+.section-title{
+	font-family: $font-semibold;
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 72px;
+	margin-bottom: 16px;
+	@include respond-to(small){
+		font-size: 32px;
+		line-height: 30px;
+		margin-bottom: 10px;
+	}
+}
+
+.section-span{
+	color: $primary-color;
+}
+
+.section-subheading{
+	color: $secondary-color;
+	font-family: $font-regular;
+	font-weight: 400;
+	line-height: 28px;
+	font-size: 20px;
+	margin-bottom: 50px;
+	@include respond-to(small){
+		font-size: 16px;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
 }
 
 #error-message,
@@ -110,40 +135,6 @@ a {
   /* Slight zoom effect on hover */
 }
 
-.section-title {
-  font-family: $font-semibold;
-  font-size: 2.25rem;
-  line-height: 54px;
-  // color: $gray-dark;
-  margin-bottom: 1.25rem;
-
-  @include respond-to(large) {
-    font-size: 1.5rem;
-    line-height: normal;
-    margin-bottom: 1.5rem;
-  }
-
-  &.mobile-view {
-    display: none;
-
-    @include respond-to(medium) {
-      display: block;
-    }
-  }
-
-  &.lg-view {
-    display: block;
-
-    @include respond-to(medium) {
-      display: none;
-    }
-  }
-
-  .blue-txt {
-    font-family: $font-semibold;
-    color: $primary;
-  }
-}
 
 .break-txt {
   display: block;
@@ -252,9 +243,6 @@ a {
   justify-content: start;
 }
 
-.clr-primary {
-  color: $primary;
-}
 
 
 .modalWrapper {
@@ -479,18 +467,6 @@ a {
         }
       }
 
-      tr {
-        // border-bottom: 1px solid $light-gray;
-      }
-
-      .green-text {
-        // color: $successGreen;
-      }
-
-      .red-text {
-        // color: $errorRed;
-      }
-
       .text-align {
         text-align: center;
       }
@@ -527,5 +503,7 @@ a {
   height: 100vh;
   width: 100vw;
 }
+
+
 
 @import "button";

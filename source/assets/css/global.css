@@ -64,6 +64,7 @@ button {
 	padding-right: .9375rem;
 	max-width: 1440px;
 	width: 100%;
+	border: 1px solid rgba(255,189,6,.226);
 }
 
 ul,
@@ -77,6 +78,27 @@ a {
 	text-decoration: none;
 	color: inherit;
 	display: inline-block;
+}
+
+.section-title {
+	font-family: "Sans-SemiBold";
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 72px;
+	margin-bottom: 16px;
+}
+
+.section-span {
+	color: #3461fd;
+}
+
+.section-subheading {
+	color: #6d737a;
+	font-family: "Sans-Regular";
+	font-weight: 400;
+	line-height: 28px;
+	font-size: 20px;
+	margin-bottom: 50px;
 }
 
 #error-message,
@@ -129,26 +151,6 @@ a {
 	    transform: scale(1.1);
 }
 
-.section-title {
-	font-family: "Sans-SemiBold";
-	font-size: 2.25rem;
-	line-height: 54px;
-	margin-bottom: 1.25rem;
-}
-
-.section-title.mobile-view {
-	display: none;
-}
-
-.section-title.lg-view {
-	display: block;
-}
-
-.section-title .blue-txt {
-	font-family: "Sans-SemiBold";
-	color: #13a2fe;
-}
-
 .break-txt {
 	display: block;
 }
@@ -192,10 +194,6 @@ a {
 .justify-start {
 	-ms-flex-pack: start;
 	    justify-content: start;
-}
-
-.clr-primary {
-	color: #13a2fe;
 }
 
 .modalWrapper {
@@ -482,13 +480,17 @@ html {
 
 }
 
-@media only screen and (max-width: 991px) {
+@media (max-width: 991px)and (orientation: landscape) {
 
-.section-title {
-	font-size: 1.5rem;
-	line-height: normal;
-	margin-bottom: 1.5rem;
+.modal-box .modal-content {
+	height: 80vh;
+	max-height: 80vh;
+	overflow-y: auto;
 }
+
+}
+
+@media only screen and (max-width: 991px) {
 
 .table-content .table-wrap table thead th {
 	font-size: .875rem;
@@ -518,25 +520,7 @@ header nav .open {
 
 }
 
-@media (max-width: 991px)and (orientation: landscape) {
-
-.modal-box .modal-content {
-	height: 80vh;
-	max-height: 80vh;
-	overflow-y: auto;
-}
-
-}
-
 @media only screen and (max-width: 767px) {
-
-.section-title.mobile-view {
-	display: block;
-}
-
-.section-title.lg-view {
-	display: none;
-}
 
 .mt-24 {
 	margin-top: 1rem;
@@ -630,6 +614,18 @@ header nav .open {
 }
 
 @media only screen and (max-width: 575px) {
+
+.section-title {
+	font-size: 32px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.section-subheading {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
 
 .modal-box .modal-title {
 	max-width: 16.875rem;

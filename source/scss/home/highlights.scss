@@ -1,7 +1,10 @@
 .highlights{
     position: relative;
     padding: 3.125rem 0;
-    background-color: $secondary-bg;
+    background-color: $secondary-bg;    
+    @include respond-to(small){
+        padding: 1.25rem 0;
+    }
 
     .highlights-wrapper{
         display: flex;

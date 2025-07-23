@@ -1,0 +1,67 @@
+.popular{
+    padding: 100px 0;
+    background-color: $secondary-bg;
+    @include respond-to(medium){
+        padding: 50px 0;
+    }
+    @include respond-to(small){
+        padding: 1.25rem 0;
+    }
+
+    .popular-card-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: -12px;
+        @include respond-to(small){
+            margin: 0;
+        }
+
+        .popular-card{
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 312px;
+            padding: 16px 24px;
+            @include rounded(22px);
+            border: 1px solid;
+            border-color: $white;
+            margin: 12px;
+            @include transition(all, 0.3s, ease-in-out);
+            @include respond-to(small){
+                margin: 12px 0;
+                max-width: 100%;
+                justify-content: space-between;
+            }
+
+            .popular-card-title{
+                width: 100%;
+                max-width: 160px;
+                color: $black;
+                margin-left: 16px;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 500;
+                @include respond-to(small){
+                    max-width: 100%;
+                }
+            }
+
+            .ri-arrow-right-up-line{
+                font-size: 24px;
+                color: $tertiary;
+                padding: 10px;
+                @include rounded(100%);
+                @include transition(all, 0.3s, ease-in-out);
+                cursor: pointer;
+                &:hover{
+                    background-color: $tertiary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}
