@@ -29,5 +29,12 @@ head
 		// build:css assets/css/component.css
 		link(rel="stylesheet", href="assets/css/component.css")
 		// endbuild
+	
+	if Page.section=="home"
+		link(rel="preload", as="style", href="assets/css/home.css")
+
+		// build:css assets/css/home.css
+		link(rel="stylesheet", href="assets/css/home.css")
+		// endbuild
 		
 	

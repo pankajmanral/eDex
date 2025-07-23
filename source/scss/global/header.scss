@@ -30,6 +30,7 @@ header{
                     cursor: pointer;
 
                 .nav-link{
+                    position: relative;
                     color: $white;
                     font-size: 16px;
                     line-height: 24px;
@@ -37,6 +38,21 @@ header{
                     @include transition(color, 0.3s, ease-in-out);                    
                     &:hover{
                         color: $tertiary;
+                    }
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 0%;
+                        height: 2px;
+                        background-color: $tertiary;
+                        @include transition(width, 0.3s, ease-in-out)
+                    }
+
+                    &:hover::after{
+                        width: 100%;
                     }
                 }            
             }
@@ -49,11 +65,12 @@ header{
             }
 
             .login-btn{
-                color: $white;
-                background: transparent;
-                padding: 12px 24px;
+                &:hover{
+                    color: $tertiary;
+                    @include transition(color, 0.3s, ease-in-out)
+                }
             }
-        }
+        }   
 
         .open{
             display: none;

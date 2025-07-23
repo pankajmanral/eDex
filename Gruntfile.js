@@ -29,6 +29,7 @@ module.exports = function(grunt) {
                     "source/assets/css/aos.css": "source/assets/css/aos.css",
                     "source/assets/css/global.css": "source/assets/css/global.css",
                     "source/assets/css/component.css": "source/assets/css/component.css",
+                    "source/assets/css/home.css": "source/assets/css/home.css",
                 },
             },
         },
@@ -41,6 +42,7 @@ module.exports = function(grunt) {
                     "source/assets/css/aos.css": "source/assets/css/aos.css",
                     "source/assets/css/global.css": "source/assets/css/global.css",
                     "source/assets/css/component.css": "source/assets/css/component.css",
+                    "source/assets/css/home.css": "source/assets/css/home.css",
                 },
             },
         },
@@ -88,6 +90,9 @@ module.exports = function(grunt) {
                     ],
                     "build/assets/js/global.js": [
                         "source/assets/js/global.js",
+                    ],
+                    "build/assets/js/home.js": [
+                        "source/assets/js/home.js",
                     ],
                 },
             },
@@ -169,6 +174,7 @@ module.exports = function(grunt) {
                     "source/assets/css/aos.css": "source/scss/vendor/aos.scss",
                     "source/assets/css/global.css": "source/scss/layout.scss",
                     "source/assets/css/component.css": "source/scss/component/master.scss",
+                    "source/assets/css/home.css": "source/scss/home/master.scss",
                 },
             },
         },

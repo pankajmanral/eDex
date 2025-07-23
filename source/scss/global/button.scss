@@ -11,6 +11,7 @@
     color: $white;
     border: none;
     outline: none;
+    background: transparent;
     @include rounded(100px);
     position: relative;
     cursor: pointer;
