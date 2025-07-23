@@ -71,7 +71,7 @@ button {
 	margin: 0 auto;
 	padding-left: .9375rem;
 	padding-right: .9375rem;
-	max-width: 1200px;
+	max-width: 1440px;
 	width: 100%;
 	border: 1px solid rgba(255,189,6,.226);
 }
@@ -417,6 +417,7 @@ header {
 	display: flex;
 	-ms-flex-align: center;
 	    align-items: center;
+	z-index: 10;
 }
 
 header nav {

@@ -103,6 +103,66 @@
 	object-position: center;
 }
 
+.highlights {
+	position: relative;
+	padding: 50px 0;
+}
+
+.highlights .highlights-wrapper {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	margin: -38px;
+}
+
+.highlights .highlights-wrapper .highlights-card {
+	width: 100%;
+	max-width: 253px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	margin: 38px;
+}
+
+.highlights .highlights-wrapper .highlights-card .highlight-icon {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: center;
+	    justify-content: center;
+	-ms-flex-align: center;
+	    align-items: center;
+	height: 84px;
+	width: 84px;
+	border-radius: 100%;
+	border: none;
+	outline: none;
+	background-color: red;
+}
+
+.highlights .highlights-wrapper .highlights-card .highlight-content {
+	margin-left: 24px;
+}
+
+.highlights .highlights-wrapper .highlights-card .highlight-content .highlight-number {
+	color: #000;
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 600;
+}
+
+.highlights .highlights-wrapper .highlights-card .highlight-content .highlight-title {
+	color: #6d737a;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 28px;
+}
+
 @media only screen and (max-width: 991px) {
 
 .banner .banner-wrapper .banner-left-text .banner-title {
