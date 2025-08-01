@@ -1,0 +1,58 @@
+.courses{
+    padding: 100px 0;
+
+    .courses-wrapper{
+        position: relative;
+        padding: 0 50px;
+    }
+
+    .courses-swiper-wrapper {
+        display: flex;
+
+        .courses-card{
+            padding: 16px;
+            background-color: $white;
+            @include rounded(1.5rem);
+            @include box-shadow(0, 0.1875rem, 0.75rem, 0, rgba(75, 75, 75, 0.08));
+        }
+
+        .courses-img{
+            margin-bottom: 16px;
+        }
+
+        .courses-card-title{
+            font-size: 20px;
+            line-height: 28px;
+            font-family: $font-medium;
+            margin-bottom: 16px;
+        }
+
+        .rating{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .count{
+            margin-left: 11px;
+            font-size: 20px;
+            line-height: 28px;
+            font-family: $font-regular;
+        }
+    }
+
+    .courses-button-prev,
+    .courses-button-next{
+        height: 44px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background: linear-gradient(180deg, rgb(255, 194, 122) 0%, rgb(255, 163, 55) 100%);
+        &::after{
+            font-size: 20px;
+            color: $white;
+        }
+    }
+
+}

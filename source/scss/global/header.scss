@@ -1,0 +1,86 @@
+@import "../global/variables";
+@import "../global/mixins";
+
+// @import respond-to()
+
+header{
+    background-color: $banner-bg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .nav-list{
+            display: flex;
+            align-items: center;
+            @include respond-to(large){
+                display: none;
+            }
+
+            .nav-item{
+                padding: 0.75rem 1.5rem;
+                cursor: pointer;
+            }
+            .nav-link{
+                position: relative;
+                color: $white;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 600;
+                @include transition(color, 0.3s, ease-in-out);                    
+                &:hover{
+                    color: $tertiary;
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 0.125rem;
+                    background-color: $tertiary;
+                    @include transition(width, 0.3s, ease-in-out)
+                }
+
+                &:hover::after{
+                    width: 100%;
+                }
+            }   
+        }
+
+        .nav-btns{
+            display: flex;
+            @include respond-to(large){
+                display: none;
+            }
+
+            .login-btn{
+                &:hover{
+                    color: $tertiary;
+                    @include transition(color, 0.3s, ease-in-out)
+                }
+            }
+        }   
+
+        .open{
+            display: none;
+            color: $white;
+            font-size: 1.875rem;
+
+            @include respond-to(large){
+                display: block;
+            }
+        }
+
+    }
+}

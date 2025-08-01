@@ -1,0 +1,67 @@
+.popular{
+    padding: 6.25rem 0;
+    background-color: $secondary-bg;
+    @include respond-to(medium){
+        padding: 3.125rem 0;
+    }
+    @include respond-to(small){
+        padding: 1.25rem 0;
+    }
+
+    .popular-card-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: -0.75rem;
+        @include respond-to(small){
+            margin: 0;
+        }
+
+        .popular-card{
+            background-color: $white;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 19.5rem;
+            padding: 1rem 1.5rem;
+            @include rounded(1.375rem);
+            border: 0.0625rem solid;
+            border-color: $white;
+            margin: 0.75rem;
+            @include box-shadow(0, 0.1875rem, 0.75rem, 0, rgba(75, 75, 75, 0.08));
+            @include transition(all, 0.3s, ease-in-out);
+            @include respond-to(small){
+                margin: 0.75rem 0;
+                max-width: 100%;
+                justify-content: space-between;
+            }
+
+            .popular-card-icon{
+                height: 34px;
+                width: 34px;
+            }
+
+        }
+    }
+    .popular-card-title{
+        width: 100%;
+        max-width: 10rem;
+        color: $black;
+        margin-left: 1rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        font-weight: 500;
+        @include respond-to(small){
+            max-width: 100%;
+        }
+    }
+
+    .popular-arw{
+        &:hover{
+            background-color: $tertiary;
+            color: $white;
+        }
+    }
+
+}
