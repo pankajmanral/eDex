@@ -20,5 +20,8 @@ const coursesSwiper = new Swiper('.courses-swiper',{
         1025 : {
             slidesPerView : 4
         }
+    },
+    pagination : {
+        el : '.swiper-pagination'
     }
 })
