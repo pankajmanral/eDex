@@ -3,8 +3,8 @@ const instuctorSwiper = new Swiper('.instructor-swiper',{
     slidesPerView : 4,
     spaceBetween : 9,
     navigation : {
-        nextEl : '.swiper-button-next',
-        prevEl : '.swiper-button-prev',
+        nextEl : '.instructor-btn-next',
+        prevEl : '.instructor-btn-prev',
     },
     centeredSlide : true,
     breakpoints : {

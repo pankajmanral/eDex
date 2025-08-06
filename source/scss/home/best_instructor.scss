@@ -1,9 +1,15 @@
 .instructor{
     padding: 100px 0;
+    @include respond-to(medium){
+        padding: 3.125rem 0;
+    }
+    @include respond-to(small){
+        padding: 1.25rem 0;
+    }
 
     .instructor-wrapper{
         position: relative;
-        padding: 50px;
+        padding: 0 50px;
 
         @include respond-to(large){
             padding: 0;
@@ -12,6 +18,7 @@
 
     .instructor-swiper-wrapper{
         display: flex;
+        padding-bottom: 70px;
         
         .instructor-card {
             padding: 16px;
@@ -57,5 +64,9 @@
 
     .swiper-button-next{
         right: -0px;
+    }
+    
+    .swiper-pagination-bullet-active{
+	    background-color: rgb(255, 163, 55);
     }
 }

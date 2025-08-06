@@ -1,5 +1,11 @@
 .courses{
     padding: 100px 0;
+    @include respond-to(medium){
+        padding: 3.125rem 0;
+    }
+    @include respond-to(small){
+        padding: 1.25rem 0;
+    }
 
     .courses-wrapper{
         position: relative;
@@ -10,7 +16,7 @@
     }
     
     .courses-swiper{
-        padding: 30px 0;
+        padding-bottom: 70px;
     }
 
     .courses-swiper-wrapper {
@@ -24,6 +30,7 @@
         }
 
         .courses-img-wrapper{
+            position: relative;
             margin-bottom: 16px;
             overflow: hidden;
             
@@ -33,6 +40,19 @@
                 object-fit: cover;
                 object-position: center;
             }
+        }
+
+        .course-title{
+            position: absolute;
+            left: 8px;
+            top: 7px;
+            font-size: 16px;
+            line-height: 24px;
+            font-family: $font-medium;
+            background-color: #fff;
+            opacity: 0.6;
+            padding: 6px 13px;
+            border-radius: 6px;
         }
 
         .courses-card-title{
@@ -103,6 +123,10 @@
             font-size: 20px;
             color: $white;
         }
+    }
+
+    .swiper-pagination-bullet-active{
+	    background-color: rgb(255, 163, 55);
     }
 
 }

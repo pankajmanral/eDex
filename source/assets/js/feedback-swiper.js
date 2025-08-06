@@ -2,8 +2,8 @@ const feedbackSwiper = new Swiper('.feedbackSwiper',{
     loop : true,
     spaceBetween : 24,
     navigation : {
-        nextEl : '.swiper-button-next',
-        prevEl : '.swiper-button-prev'
+        nextEl : '.feedback-btn-next',
+        prevEl : '.feedback-btn-prev'
     },
     pagination : {
         el : '.swiper-pagination'

@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "Sans-Medium";
+	font-family: 'Sans-Medium';
 	src: url("../../assets/fonts/PublicSans-Medium.eot");
 	src: url("../../assets/fonts/PublicSans-Medium.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/PublicSans-Medium.woff2") format("woff2"),url("../../assets/fonts/PublicSans-Medium.woff") format("woff"),url("../../assets/fonts/PublicSans-Medium.ttf") format("truetype");
 	font-weight: 500;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-	font-family: "Sans-Regular";
+	font-family: 'Sans-Regular';
 	src: url("../../assets/fonts/PublicSans-Regular.eot");
 	src: url("../../assets/fonts/PublicSans-Regular.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/PublicSans-Regular.woff2") format("woff2"),url("../../assets/fonts/PublicSans-Regular.woff") format("woff"),url("../../assets/fonts/PublicSans-Regular.ttf") format("truetype");
 	font-weight: normal;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-	font-family: "Sans-SemiBold";
+	font-family: 'Sans-SemiBold';
 	src: url("../../assets/fonts/PublicSans-SemiBold.eot");
 	src: url("../../assets/fonts/PublicSans-SemiBold.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/PublicSans-SemiBold.woff2") format("woff2"),url("../../assets/fonts/PublicSans-SemiBold.woff") format("woff"),url("../../assets/fonts/PublicSans-SemiBold.ttf") format("truetype");
 	font-weight: 600;
@@ -55,13 +55,13 @@ html {
 
 a,
 button {
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
 }
 
 .container {
 	margin: 0 auto;
-	padding-left: .9375rem;
-	padding-right: .9375rem;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
 	max-width: 1440px;
 	width: 100%;
 }
@@ -88,11 +88,11 @@ a {
 }
 
 .section-span {
-	color: #3461fd;
+	color: #3461FD;
 }
 
 .section-description {
-	color: #6d737a;
+	color: #6D737A;
 	font-family: "Sans-Regular";
 	font-weight: 400;
 	line-height: 28px;
@@ -102,8 +102,8 @@ a {
 
 .ri-arrow-right-up-line {
 	font-size: 1.5rem;
-	color: #ffc27a;
-	padding: .625rem;
+	color: #FFC27A;
+	padding: 0.625rem;
 	border-radius: 100%;
 	transition: all .3s ease-in-out;
 	cursor: pointer;
@@ -136,7 +136,7 @@ a {
 	bottom: -25px;
 	left: 0px;
 	display: none;
-	font-size: .875rem;
+	font-size: 0.875rem;
 }
 
 #scrollTopBtn {
@@ -146,7 +146,7 @@ a {
 	width: 50px;
 	height: 50px;
 	background: radial-gradient(75.52% 108.69% at 51.9% 100%, #0854C4 32.04%, #093A8A 64.58%, #092962 100%);
-	color: #fff;
+	color: white;
 	border: none;
 	padding: 10px 15px;
 	border-radius: 50%;
@@ -154,7 +154,7 @@ a {
 	cursor: pointer;
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity .3s,transform .3s;
+	transition: opacity 0.3s, transform 0.3s;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: center;
@@ -199,7 +199,7 @@ a {
 }
 
 .mb-12 {
-	margin-bottom: .75rem;
+	margin-bottom: 0.75rem;
 }
 
 .mb-16 {
@@ -229,7 +229,7 @@ a {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,.8);
+	background: rgba(0,0,0,0.8);
 	z-index: 99999;
 	background-size: cover;
 	display: none;
@@ -242,7 +242,7 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,.5);
+	background: rgba(0,0,0,0.5);
 	visibility: hidden;
 	opacity: 0;
 }
@@ -257,10 +257,10 @@ a {
 }
 
 .modal-box .modal-title {
-	color: gray;
+	color: grey;
 	font-size: 1.25rem;
 	line-height: 1.625rem;
-	letter-spacing: .01rem;
+	letter-spacing: 0.01rem;
 	margin-bottom: 1.125rem;
 }
 
@@ -333,7 +333,7 @@ a {
 	font-size: 16px;
 	font-style: normal;
 	line-height: 20px;
-	letter-spacing: .24px;
+	letter-spacing: 0.24px;
 }
 
 .table-content .table-wrap table thead th:first-child {
@@ -345,7 +345,7 @@ a {
 }
 
 .table-content .table-wrap table td {
-	padding: .75rem 1rem;
+	padding: 0.75rem 1rem;
 	font-family: "Sans-Regular";
 	font-size: 1rem;
 	line-height: 1.48rem;
@@ -368,7 +368,7 @@ a {
 	font-size: 18px;
 	font-style: normal;
 	line-height: 20px;
-	letter-spacing: .16px;
+	letter-spacing: 0.16px;
 	margin-bottom: 20px;
 }
 
@@ -399,11 +399,11 @@ a {
 	    align-self: baseline;
 	font-size: 1rem;
 	line-height: 1.5rem;
-	padding: .75rem 1.5rem;
+	padding: 0.75rem 1.5rem;
 	color: #fff;
 	border: none;
 	outline: none;
-	background: rgba(0,0,0,0);
+	background: transparent;
 	border-radius: 6.25rem;
 	position: relative;
 	cursor: pointer;
@@ -413,15 +413,15 @@ a {
 .btn-primary {
 	color: #fff;
 	transition: all .3s ease-in-out;
-	background: linear-gradient(180deg, rgb(255, 194, 122) 0%, rgb(255, 163, 55) 100%);
+	background: linear-gradient(180deg, #ffc27a 0%, #ffa337 100%);
 }
 
 .btn-primary:hover {
-	background: rgba(0,0,0,0);
+	background: transparent;
 }
 
 header {
-	background-color: #6176f7;
+	background-color: #6176F7;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -451,7 +451,7 @@ header nav .nav-list {
 }
 
 header nav .nav-list .nav-item {
-	padding: .75rem 1.5rem;
+	padding: 0.75rem 1.5rem;
 	cursor: pointer;
 }
 
@@ -465,7 +465,7 @@ header nav .nav-list .nav-link {
 }
 
 header nav .nav-list .nav-link:hover {
-	color: #ffc27a;
+	color: #FFC27A;
 }
 
 header nav .nav-list .nav-link::after {
@@ -474,8 +474,8 @@ header nav .nav-list .nav-link::after {
 	bottom: 0;
 	left: 0;
 	width: 0%;
-	height: .125rem;
-	background-color: #ffc27a;
+	height: 0.125rem;
+	background-color: #FFC27A;
 	transition: width .3s ease-in-out;
 }
 
@@ -489,7 +489,7 @@ header nav .nav-btns {
 }
 
 header nav .nav-btns .login-btn:hover {
-	color: #ffc27a;
+	color: #FFC27A;
 	transition: color .3s ease-in-out;
 }
 
@@ -604,7 +604,7 @@ html {
 
 }
 
-@media (max-width: 991px)and (orientation: landscape) {
+@media (max-width: 991px) and (orientation: landscape) {
 
 .modal-box .modal-content {
 	height: 80vh;
@@ -617,17 +617,17 @@ html {
 @media only screen and (max-width: 991px) {
 
 .table-content .table-wrap table thead th {
-	font-size: .875rem;
-	padding: .75rem .5625rem;
+	font-size: 0.875rem;
+	padding: 0.75rem 0.5625rem;
 	min-width: 200px;
 }
 
 .table-content .table-wrap table td {
-	font-size: .875rem;
+	font-size: 0.875rem;
 }
 
 .btn {
-	font-size: .875rem;
+	font-size: 0.875rem;
 }
 
 header nav .nav-list {
@@ -651,7 +651,7 @@ header nav .open {
 }
 
 .sm-mt-8 {
-	margin-top: .5rem;
+	margin-top: 0.5rem;
 }
 
 .sm-mt-16 {
@@ -671,7 +671,7 @@ header nav .open {
 }
 
 .sm-mb-8 {
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
 .sm-mb-16 {
@@ -732,7 +732,7 @@ header nav .open {
 }
 
 .readmore-button .btn {
-	padding: .75rem 1rem;
+	padding: 0.75rem 1rem;
 }
 
 footer .footer-wrapper .footer-column {

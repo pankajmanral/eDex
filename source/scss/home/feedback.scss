@@ -1,6 +1,12 @@
 .feedback {
 	padding: 100px 0;
 	background-color: #F8F4FF;
+	@include respond-to(medium){
+        padding: 3.125rem 0;
+    }
+    @include respond-to(small){
+        padding: 1.25rem 0;
+    }
 }
 
 .feedback .feedback-row {
