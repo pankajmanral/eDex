@@ -1,0 +1,100 @@
+footer {
+    background-color: rgba(33, 33, 47, 1);
+    padding: 45px 0 88px;
+    color: $white;
+    @include respond-to(small){
+        padding: 45px 0;
+    }
+
+    .footer-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .footer-column{
+            flex: 1;
+            margin-bottom: 30px;
+
+            @include respond-to(medium){
+                flex: 1 0 50%;
+            }
+
+            @include respond-to(small){
+                flex: 1 0 100%;
+            }
+
+            &:nth-child(2){
+                display: flex;
+                justify-content: center;
+                
+                @include respond-to(medium){
+                    justify-content: flex-start;
+                }
+            }
+
+            &:nth-child(3){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                
+                @include respond-to(medium){
+                    justify-content: flex-start;
+                }
+            }
+
+        }
+
+        .company-logo{
+            margin-bottom: 24px;
+        }
+        .contact-us{
+            margin-bottom: 15px;
+        }
+        .phone-number{
+            margin-bottom: 7px;
+        }
+        .description{
+            margin-bottom: 15px;
+        }
+        .footer-heading{
+            font-family: $font-semibold;
+            font-size: 24px;
+            line-height: 32px;
+            margin-bottom: 31px;
+        }
+        .email{
+            margin-bottom: 15px;
+        }
+        
+        .footer-item{
+            margin-bottom: 15px;
+        }
+
+        .subscribe-text{
+            margin-bottom: 31px;
+        }
+
+        .subscribe-desription{
+            margin-bottom: 21px;
+        }
+
+        .form-control{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email-input{
+            font-size: 16px;
+            padding: 1rem;
+            border-radius: 1rem;
+            border: none;
+            outline: none;
+            margin-bottom: 34px;
+        }
+
+        .error{
+            display: none;
+        }
+    }
+}

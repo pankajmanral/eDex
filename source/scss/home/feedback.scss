@@ -1,0 +1,124 @@
+.feedback {
+	padding: 100px 0;
+	background-color: #F8F4FF;
+}
+
+.feedback .feedback-row {
+	position: relative;
+	padding: 0 50px;
+	@include respond-to(large){
+		padding: 0;
+	}
+}
+
+.feedback .feedbackSwiper {
+	padding-bottom: 50px;
+	width: 100%;
+}
+
+.feedback .feedback-swiper-wrapper {
+	display: flex;
+}
+
+.feedback .feedback-card {
+	background-color: $white;
+	padding: 32px;
+	border-radius: 16px;
+
+	@include respond-to(mdlaptop){
+		padding: 32px 10px;
+	}
+}
+
+.feedback .feedback-card-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 32px;
+	@include respond-to(extralarge){
+		margin-bottom: 22px;
+	}
+}
+
+.feedback .feedback-owner-name {
+	font-size: 24px;
+	line-height: 32px;
+	font-family: "Sans-SemiBold";
+	margin-bottom: 8px;
+	text-wrap: nowrap;
+	
+	@include respond-to(extralarge){
+		font-size: 16px;
+		line-height: 10px;
+	}
+}
+
+.feedback .feedback-card-header .feedback-owner-designation {
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Sans-Regular";
+	@include respond-to(extralarge){
+		font-size: 12px;
+		line-height: 10px;
+	}
+}
+
+.feedback .feedback-owner-container {
+	display: flex;
+	align-items: center;
+}
+
+.feedback-image{
+	height: 70px;
+	width: 70px;
+	object-fit: cover;
+	object-position: center;
+	@include respond-to(extralarge){
+		height: 40px;
+		width: 40px;
+	}
+}
+
+.feedback .feedback-owner-container .feedback-owner {
+	margin-left: 10px;
+}
+
+.feedback .quotation-icon {
+	width: 40px;
+	height: 29px;
+	@include respond-to(extralarge){
+		width: 30px;
+		height: 19px;
+	}
+}
+
+.feedback .swiper-pagination-bullet-active {
+	background-color: rgb(255, 163, 55);
+}
+
+.feedback .feedback-btn-prev,
+.feedback .feedback-btn-next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 44px;
+	width: 44px;
+	border-radius: 100%;
+	background: linear-gradient(180deg, rgb(255, 194, 122) 0%, rgb(255, 163, 55) 100%);
+	@include respond-to(large){
+		display: none;
+	}
+}
+
+.feedback .feedback-btn-prev::after,
+.feedback .feedback-btn-next::after {
+	font-size: 20px;
+	color: white;
+}
+
+.feedback .feedback-btn-next {
+	right: -5px;
+}
+
+.feedback .feedback-btn-prev {
+	left: -5px;
+}

@@ -1,0 +1,67 @@
+.highlights{
+    position: relative;
+    padding: 3.125rem 0;
+    background-color: $secondary-bg;    
+    @include respond-to(small){
+        padding: 1.25rem 0;
+    }
+
+    .highlights-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: -2.375rem;
+        
+        .highlights-card{
+            width: 100%;
+            max-width: 15.8125rem;
+            display: flex;
+            align-items: center;
+            margin: 2.375rem;
+
+        }
+        .highlight-icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5.25rem;
+            width: 5.25rem;
+            @include rounded(100%);
+            border: none;
+            outline: none;
+        }
+        .gradient-one{
+                background: linear-gradient(180deg,rgba(42, 249, 177, 1) 0%, rgba(32, 180, 134, 1) 100%);
+        }
+
+        .gradient-two{
+            background: linear-gradient(180deg,rgba(169, 136, 249, 1) 0%, rgba(109, 58, 233, 1) 100%);
+        }
+
+        .gradient-three{
+            background: linear-gradient(180deg,rgba(255, 164, 175, 1) 0%, rgba(238, 69, 90, 1) 100%);
+        }
+
+        .gradient-four{
+            background: linear-gradient(180deg,rgba(146, 218, 240, 1) 0%, rgba(33, 201, 255, 1) 100%);
+        }
+    }
+    .highlight-content{
+        margin-left: 1.5rem;
+
+        .highlight-number{
+            color: $black;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            font-weight: 600;
+        }
+
+        .highlight-title{
+            color: #6D737A;
+            font-weight: 400;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+    }
+}

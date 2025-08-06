@@ -1,0 +1,134 @@
+.banner{
+    padding: 7.75rem 0;
+    background-color: $banner-bg;
+    @include respond-to(medium){
+        padding: 2.5rem 0;
+    }
+
+    @include respond-to(small){
+        padding: 2.5rem 0rem;
+    }
+
+    .banner-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+        @include respond-to(medium){
+            flex-direction: column-reverse;
+        }
+
+        .banner-left-text{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 46.25rem;
+
+            .banner-title{
+                text-transform: uppercase;
+                color: $tertiary;
+                margin-bottom: 3.875rem;
+                font-weight: 600;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                @include respond-to(large){
+                    margin-bottom: 1.375rem;
+                }
+            }
+
+        }
+        .banner-heading{
+            color: $white;
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+            font-weight: 600;
+            margin-bottom: 0.8125rem;
+            @include respond-to(large){
+                font-size: 1.875rem;
+                line-height: 2.1875rem;
+            }
+        }
+
+        .banner-subheading{
+            color: #CFD3D6;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 400;
+            margin-bottom: 2.75rem;
+            @include respond-to(large){
+                font-size: 1rem;
+                line-height: 1.25rem;
+            }
+
+            @include respond-to(large){
+                margin-bottom: 1.375rem;
+            }
+        }
+
+        .form-control{
+            position: relative;
+
+            input{
+                width: 100%;
+                padding: 1.5rem 0;
+                padding-left: 2.3125rem;
+                @include rounded(62.5rem);
+                outline: none;
+                border: none;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                font-weight: 400;
+                color: #6D737A;
+                @include respond-to(large){
+                    padding: 0.875rem 0;
+                    padding-left: 1.25rem;
+                }
+            }
+
+        }
+
+        .search-icon{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            right: 0;
+            height: 4.5rem;
+            width: 4.5rem;
+            @include rounded(100%);
+            background: $primary-gradient;
+            cursor: pointer;
+            @include respond-to(large){
+                height: 3.25rem;
+                width: 3.25rem;
+            }
+        
+        }
+        .ri-search-line{
+            color: $white;
+            font-size: 1.5rem;
+            @include transition(transform, 0.3s, ease-in-out);
+            &:hover{
+                transform: scale(1.3);
+            }
+        }
+
+        .banner-right-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 31.25rem;
+            @include respond-to(small){
+                margin-bottom: 2.5rem;
+            }
+
+            .banner_image{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+}
