@@ -23,7 +23,19 @@ header{
             display: flex;
             align-items: center;
             @include respond-to(large){
-                display: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                position: fixed;
+                height: 100%;
+                width: 100%;
+                background-color: $banner-bg;
+                top: 0;
+                left: 0;
+                transform: translateX(-100%);
+                @include transition(all, 0.3s, ease-in-out);
+                margin-top: 24px;
             }
 
             .nav-item{
@@ -76,11 +88,12 @@ header{
             display: none;
             color: $white;
             font-size: 1.875rem;
+            z-index: 10;
+            cursor: pointer;
 
             @include respond-to(large){
                 display: block;
             }
         }
-
     }
 }
