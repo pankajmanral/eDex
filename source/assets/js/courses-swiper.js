@@ -1,7 +1,8 @@
 const coursesSwiper = new Swiper('.courses-swiper',{
-	loop : true,
+	loop : false,
     slidesPerView : 4,
-    spaceBetween : 9,
+    spaceBetween : 24,
+    grabCursor : true,
     navigation : {
         nextEl : '.courses-button-next',
         prevEl : '.courses-button-prev',

@@ -45,12 +45,21 @@ footer {
 
         }
 
+        .social-link{
+            font-size: 20px;
+            padding: 14px;
+            border-radius: 100%;
+            background-color: $white;
+        }
+
         .company-logo{
             margin-bottom: 24px;
         }
+
         .contact-us{
             margin-bottom: 15px;
         }
+
         .phone-number{
             margin-bottom: 7px;
         }
@@ -95,6 +104,8 @@ footer {
 
         .error{
             display: none;
+            color: $error-color;
+            font-size: 10px;
         }
     }
 }

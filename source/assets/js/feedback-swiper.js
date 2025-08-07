@@ -1,6 +1,7 @@
 const feedbackSwiper = new Swiper('.feedbackSwiper',{
-    loop : true,
+    loop : false,
     spaceBetween : 24,
+    grabCursor : true,
     navigation : {
         nextEl : '.feedback-btn-next',
         prevEl : '.feedback-btn-prev'
@@ -12,11 +13,10 @@ const feedbackSwiper = new Swiper('.feedbackSwiper',{
         0 : {
             slidesPerView : 1
         },
-        768 : {
-            slidesPerView : 2,
-            spaceBetween : 12
+        526 : {
+            slidesPerView : 2
         },
-        991 : {
+        768 : {
             slidesPerView : 3
         }
     }

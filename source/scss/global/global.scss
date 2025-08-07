@@ -142,6 +142,14 @@ a {
   border-radius: 100%;
 }
 
+.swiper-button-disabled{
+    background: $white !important;
+
+    &::after{
+      color: $black !important;
+    }
+}
+
 #error-message,
 #error-messages,
 .error-message {

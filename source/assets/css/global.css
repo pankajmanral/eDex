@@ -160,6 +160,14 @@ a {
 	border-radius: 100%;
 }
 
+.swiper-button-disabled {
+	background: #fff !important;
+}
+
+.swiper-button-disabled::after {
+	color: #000 !important;
+}
+
 #error-message,
 #error-messages,
 .error-message {
@@ -537,6 +545,13 @@ footer .footer-wrapper .footer-column:nth-child(3) {
 	text-align: left;
 }
 
+footer .footer-wrapper .social-link {
+	font-size: 20px;
+	padding: 14px;
+	border-radius: 100%;
+	background-color: #fff;
+}
+
 footer .footer-wrapper .company-logo {
 	margin-bottom: 24px;
 }
@@ -594,6 +609,8 @@ footer .footer-wrapper .email-input {
 
 footer .footer-wrapper .error {
 	display: none;
+	color: red;
+	font-size: 10px;
 }
 
 @media only screen and (max-width: 1199px) {

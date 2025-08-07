@@ -1,10 +1,11 @@
 .cta-section{
+    padding-bottom: 10.8125rem;
     @include respond-to(mediumtab){
-        padding-bottom: 50px;
+        padding-bottom: 3.125rem;
     }
 
     @include respond-to(small){
-        padding-bottom: 30px;
+        padding-bottom: 1.875rem;
     }
 
     .cta-wrapper{
@@ -18,24 +19,24 @@
     }
 
     .cta-image{
-        margin-left: -300px;
+        margin-left: -18.75rem;
         object-fit: cover;
         object-position: center;
         
         @include respond-to(mediumtab){
-            margin-left: 0px;
+            margin-left: 0rem;
             width: 100%;
-            margin-bottom: 30px;
+            margin-bottom: 1.875rem;
         }
 
         @include respond-to(laptop){
-            width: 1000px;
+            width: 62.5rem;
         }
     }
 
     .cta-content{
         width: 100%;
-        max-width: 648px;
+        max-width: 40.5rem;
 
         @include respond-to(mediumtab){
             max-width: 100%;
@@ -43,15 +44,15 @@
     }
 
     .cta-heading{
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 2.5rem;
+        line-height: 3rem;
         font-family: $font-semibold;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
 
         @include respond-to(small){
-            font-size: 32px;
-            line-height: 38px;
-            margin-bottom: 14px;
+            font-size: 2rem;
+            line-height: 2.375rem;
+            margin-bottom: 0.875rem;
         }
     }
 
@@ -60,22 +61,22 @@
     }
 
     .cta-subheading{
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 1.5rem;
+        line-height: 2rem;
         font-family: $font-regular;
-        margin-bottom: 24px;
+        margin-bottom: 1.5rem;
 
         @include respond-to(small){
-            font-size: 16px;
-            line-height: 22px;
-            margin-bottom: 14px;
+            font-size: 1rem;
+            line-height: 1.375rem;
+            margin-bottom: 0.875rem;
         }
     }
 
     .cta-description{
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         font-family: $font-regular;
-        margin-bottom: 37px;
+        margin-bottom: 2.3125rem;
     }
 }
