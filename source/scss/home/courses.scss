@@ -17,6 +17,9 @@
     
     .courses-swiper{
         padding: 1.25rem 1.25rem 4.375rem 1.25rem;
+        @include respond-to(small){
+            padding: 0 0 4.375rem 0;
+        }
     }
 
     .courses-swiper-wrapper {
